@@ -1,0 +1,19 @@
+/**
+ * @name Country Flags Everywhere
+ * @description Makes country flags visible even where they wouldn't normally appear (display names, channel names, etc.)
+ * @version 1
+ * @author Francesco
+ * @authorId 884070605564018728
+ * @source https://github.com/FrancescoRosi/discord-country-flags-everywhere
+*/
+
+@font-face {
+    font-family: "Twemoji Country Flags";
+    src: url("https://raw.githubusercontent.com/FrancescoRosi/discord-country-flags-everywhere/refs/heads/main/TwemojiCountryFlags.woff2");
+}
+:root {
+    --font-primary: "gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif, "Twemoji Country Flags";
+}
+[class^="emoji"] {
+    font-family: "Twemoji Country Flags";
+}
